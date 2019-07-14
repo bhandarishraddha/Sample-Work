@@ -1,0 +1,793 @@
+<html>
+<head>
+	<title>
+		You Tube
+	</title>
+	<style type="text/css">
+		html, body
+{
+	height: 100%;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+#up
+{
+	height: 60px;
+	width: 100%;
+	position: fixed;
+	background-color: #282828;
+}
+#lefttitle
+{
+	height: 100%;
+	width: 21%;
+	display: inline-block;
+}
+#searchbar
+{
+	height: 60%;
+	width: 48%;
+	float: right;
+	display: inline-block;
+	margin-top: 12px;
+	color: grey;
+}
+#options
+{
+	margin-top: 12px;
+	height: 60%;
+	width: 31%;
+	float: right;
+}
+#menu_icon
+{
+	height: 30%;
+	width: 7%;
+	margin-top: 18px;
+	margin-left: 30px;
+	display: inline-block;
+}
+#menu_linea, #menu_lineb, #menu_linec
+{
+	border-style: solid;
+	border-width: 1px;
+	border-color: white;
+	line-height: 0px;
+	margin-top: -4px;
+}
+#menu_linea
+{
+	margin-top: 4px;
+}
+#logo
+{
+	float: right;
+	margin-right: 118px;
+	margin-top: 12px;
+	width: 35%;
+	height: 50%;
+}
+#logo_img
+{
+	margin-right: auto;
+	margin-top: 5px;
+}
+#search
+{
+	height: 100%;
+	width: 90%;
+	display: inline-block;
+	float: left;
+	background-color: #101010;
+	border-style: solid;
+	border-width: 0.1px;
+	border-color: #383838;
+	padding-left: 10px;
+	font-size: 15px;
+}
+#search_icon
+{
+
+	height: 100%;
+	float: right;
+	width: 10%;
+	margin-left: -5px;
+	background-color: #383838;
+	border-style: solid;
+	border-width: 0.1px;
+	border-color: #383838;
+	border-radius: 2px;
+}
+#camera_icon
+{
+ 	height: 100%;
+	width: 10%;
+	float: right;
+	display: inline-block;
+	margin-right: 20px;
+	margin-top: 3px;
+}
+#tile_icon
+{
+	height: 100%;
+	width: 10%;
+	display: inline-block;
+	float: right;
+	margin-right: 20px;
+	margin-top: 3px;
+}
+#share_icon
+{
+	height: 100%;
+	width: 10%;
+	display: inline-block;
+	float: right;
+	margin-right: 20px;
+	margin-top: 3px;
+}
+#three_dots
+{
+	height: 100%;
+	width: 10%;
+	display: inline-block;
+	float: right;
+	margin-right: 20px;
+}
+#user
+{
+	height: 100%;
+	width: 10%;
+	display: inline-block;
+	float: right;
+	margin-right: 20px;
+}
+#icon_img
+{
+	margin-left: 3px;
+}
+#dota, #dotb, #dotc
+{
+	border-style: solid;
+	border-width: 2px;
+	border-color: grey;
+	line-height: 0px;
+	margin-top: -4px;
+}
+#dota
+{
+	margin-top: 8px;
+}
+#dots
+{
+	width: 10%;
+	margin: auto;
+}
+#login
+{
+	height: 35px;
+	width: 35px;
+	border-style: solid;
+	border-width: 0px;
+	border-radius: 30px;
+	background-color: darkcyan;
+	color: white;
+}
+#left
+{
+	height: 2040px;
+	width: 68%;
+	background-color: #101010;
+	display: inline-block;
+	float: left;
+}
+#right
+{
+	height: 2040px;
+	width: 32%;
+	background-color: #101010;
+	display: inline-block;
+	float: right;
+}
+#main_video
+{
+	width: 94%;
+	margin: auto;
+	height: 480px;
+	margin-top: 80px;
+}
+#yoga_video
+{
+	width: 100%;
+}
+#up_next
+{
+	margin-top: 80px;
+	width: 90%;
+	height: 25px;
+}
+#up_next_text, #autoplay
+{
+	font-family: "arial";
+	margin-top: 0px;
+	display: inline-block;
+}
+#up_next_text
+{
+	color: white;
+}
+#autoplay
+{
+	float: right;
+	color: lightgrey;
+}
+#playlist
+{
+	height: 105px;
+	width: 90%;
+	display: inline-block;
+}
+#playlist_down
+{
+	height: 105px;
+	width: 90%;
+	display: inline-block;
+	margin-bottom: 5px;
+}
+.thumbnail_img
+{
+	height: 105px;
+	width: 45%;
+	display: inline-block;
+	float: left;
+	background-image: url(../img/1.jpg);
+}
+#video_name
+{
+	height: 105px;
+	width: 55%;
+	display: inline-block;
+	float: right;
+}
+#video_title
+{
+	font-family: "arial";
+	font-weight: bold;
+	font-size: 15px;
+	color: white;
+	margin-top: 0px;
+	margin-left: 8px;
+}
+#channel
+{
+	font-family: "arial";
+	font-size: 14px;
+	color: lightgrey;
+	margin-top: -3px;
+	margin-left: 8px;
+	line-height:8px;
+}
+#linea
+{
+	width: 90%;
+	float: left;
+	border-width: 0.5px;
+	border-style: solid;
+	border-color: lightgrey;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+#video_title
+{
+	width: 100%;
+	height: 60px;
+}
+#heading
+{
+	font-family: "arial";
+	font-size: 20px;
+	color: white;
+	font-weight: normal;
+	margin-left: 20px;
+}
+#views
+{
+	font-family: "arial";
+	font-size: 15px;
+	line-height: 0px;
+	color: darkgrey;
+	font-weight: normal;
+	margin-left: 20px;
+}
+#icon
+{
+	margin-left: 370px;
+	margin-right: 8px;
+}
+#icona, #iconb, #iconc
+{
+	margin-right: 8px;
+	margin-left: 20px;
+	display: inline-block;
+}
+.dots
+{
+	height: 4px;
+	width: 4px;
+	background-color: darkgrey;
+	border-radius: 300px;
+	display: inline-block;
+	margin-right: 3px;
+	margin-top: -19px;
+}
+#dotsa
+{
+	margin-left: 860px;
+}
+#lineb
+{
+	width: 93%;
+	margin: auto;
+	border-width: 0.5px;
+	border-style: solid;
+	border-color: lightgrey;
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+#linebb
+{
+	width: 93%;
+	margin: auto;
+	border-width: 0.5px;
+	border-style: solid;
+	border-color: lightgrey;
+	margin-top: 45px;
+	margin-bottom: 25px;
+}
+#channel_details
+{
+	height: 40px;
+	width: 93%;
+	margin: auto;
+}
+#channel_name
+{
+	width: 40%;
+	height: 100%;
+	display: inline-block;
+	margin-left: 5px;
+}
+#subscribe
+{
+	width: 17%;
+	height: 100%;
+	display: inline-block;
+	float: right;
+}
+#subscribe_button
+{
+	height: 100%;
+	width: 100%;
+	background-color: red;
+	color: white;
+	font-weight:bold;
+	font-size: 15px;
+	border-radius: 3px;
+	border-width: 0px;
+}
+#channel_overview
+{
+	height: 65px;
+	width: 70%;
+	margin-left: 80px;
+}
+#channelName
+{
+	font-family: "arial";
+	font-size: 16px;
+	color: white;
+	line-height: 0px;
+}
+#publishedOn
+{
+	font-family: "arial";
+	font-size: 12px;
+	color: darkgrey;
+	line-height: 5px;
+}
+#channel_dp
+{
+	height: 40px;
+	width: 40px;
+	border-radius: 300px;
+	background-image: url("../img/1.jpg");
+	display: inline-block;
+}
+#channel_overview_content
+{
+	font-size: 13px;
+	color: white;
+	line-height: 20px;
+	font-family: "arial";
+}
+#showMore
+{
+	font-size: 13px;
+	color: darkgrey;
+	font-family: "arial";
+	font-weight: bold;
+	line-height: 28px;
+	text-decoration: none;
+}
+#comment_user
+{
+	width: 100%;
+	height: 90px;
+	margin-left: 20px;
+}
+#linec
+{
+	width: 89%;
+	margin: auto;
+	margin-left: 70px;
+	border-width: 0.5px;
+	border-style: solid;
+	border-color: lightgrey;
+	margin-top: -33px;
+	margin-bottom: 55px;
+}
+#commenta
+{
+	height: 60px;
+	width: 100%;
+	margin-left: 25px;
+	margin-bottom: 40px;
+}
+#published_as
+{
+	margin-left: 50px;
+	margin-top: 0px;
+}
+#commentors
+{
+	width: 90%;
+	height: 80px;
+	display: inline-block;
+	margin-left: 5px;
+}
+	</style>
+</head>
+<body>
+	<div id="up">
+		<div id="lefttitle">
+			<div id="menu_icon">
+				<hr id="menu_linea"></hr>
+				<hr id="menu_lineb"></hr>
+				<hr id="menu_linec"></hr>
+			</div>
+			<div id="logo">
+				<img src="img/1.png" height="23px" id="logo_img">
+			</div>
+		</div>
+		<div id="options">
+			<div id="user">
+				<input type="submit" name="login" value="S" id="login">
+			</div>
+			<div id="three_dots">
+				<div id="dots">
+					<hr id="dota"></hr>
+					<hr id="dotb"></hr>
+					<hr id="dotc"></hr>
+				</div>
+			</div>
+			<div id="share_icon">
+				<img src="img/3.png" height="30px" id="icon_img">
+			</div>
+			<div id="tile_icon">
+				<img src="img/3.png" height="30px" id="icon_img">
+			</div>
+			<div id="camera_icon">
+				<img src="img/3.png" height="30px" id="icon_img">
+			</div>
+		</div>
+		<div id="searchbar">
+			<input type="text" name="search" placeholder="Search" id="search">
+			<input type="submit" name="search_icon" id="search_icon" value="O">
+		</div>
+	</div>
+	<div id="page">
+		<div id="left">
+			<div id="main_video">
+				<video src="video/1.mp4" controls id="yoga_video"></video>
+			</div>
+			<div id="video_title">
+					<p id="heading">Types of Shoppers in Every Mall | MostlySane</p>
+					<p id="views">2,337,444 views <img src="img/3.png" height="20px" id="icon">144K<img src="img/3.png" height="20px" id="icona">3.6K<img src="img/3.png" height="20px" id="iconb">SHARE<img src="img/3.png" height="20px" id="iconc">SAVE<div id="dotsa" class="dots"></div><div id="dotsb" class="dots"></div><div id="dotsc" class="dots"></div></p>
+				</div>
+			<hr id="lineb"></hr>
+			<div id="channel_details">
+				<div id="channel_dp">
+					
+				</div>
+				<div id="channel_name">
+					<p id="channelName">MostlySane</p>
+					<p id="publishedOn">Published on 30 May 2019</p>
+				</div>
+				<div id="subscribe">
+					<input type="submit" name="subscribe" value="Subscribe  4M" id="subscribe_button">
+				</div>
+			</div>
+			<div id="channel_overview">
+				<p id="channel_overview_content">Click here to Subscribe :- <a href="https://www.google.com">http://bit.ly/PrajaktaKoli</a><br>Kisne bola mall me timepass karte waqt entertainment nahi hota??? Proof mil gaya! Lemme know what type of a shopper you are in the comment section below! Also, huge shout-out to Xiaomi for <br><a id="showMore" href="https://www.google.com" id="channel_overview_link">SHOW MORE</a></p>
+			</div>
+			<hr id="linebb"></hr>
+			<div id="comment_user">
+				<p id="publishedOn">4811 Comments<a id="showMore" href="https://www.google.com">SORT BY</a></p>
+				<div id="channel_dp">
+				</div>
+				<div id="channelName">
+					<p id="published_as">Commenting as Shraddha Bhandari</p>
+				</div>
+			</div>
+			<hr id="linec"></hr>
+			<div id="commenta">
+				<div id="channel_dp">
+				</div>
+				<div id="commentors">
+					<p id="channelName">User One</p>
+					<p id="channel_overview_content">Itni garmi hai bahar yaar! Hum bechare bachhe timepass karne jaaye toh kahan jaaye??? Kaisa laga video??? Aapne kaise shoppers dekhe hain?? Tell me no!<br><a href="https://www.google.com" id="showMore">REPLY</a></p>
+				</div>
+			</div>
+			<div id="commenta">
+				<div id="channel_dp">
+				</div>
+				<div id="commentors">
+					<p id="channelName">User One</p>
+					<p id="channel_overview_content">Itni garmi hai bahar yaar! Hum bechare bachhe timepass karne jaaye toh kahan jaaye??? Kaisa laga video??? Aapne kaise shoppers dekhe hain?? Tell me no!<br><a href="https://www.google.com" id="showMore">REPLY</a></p>
+				</div>
+			</div>
+			<div id="commenta">
+				<div id="channel_dp">
+				</div>
+				<div id="commentors">
+					<p id="channelName">User One</p>
+					<p id="channel_overview_content">Itni garmi hai bahar yaar! Hum bechare bachhe timepass karne jaaye toh kahan jaaye??? Kaisa laga video??? Aapne kaise shoppers dekhe hain?? Tell me no!<br><a href="https://www.google.com" id="showMore">REPLY</a></p>
+				</div>
+			</div>
+			<div id="commenta">
+				<div id="channel_dp">
+				</div>
+				<div id="commentors">
+					<p id="channelName">User One</p>
+					<p id="channel_overview_content">Itni garmi hai bahar yaar! Hum bechare bachhe timepass karne jaaye toh kahan jaaye??? Kaisa laga video??? Aapne kaise shoppers dekhe hain?? Tell me no!<br><a href="https://www.google.com" id="showMore">REPLY</a></p>
+				</div>
+			</div>
+			<div id="commenta">
+				<div id="channel_dp">
+				</div>
+				<div id="commentors">
+					<p id="channelName">User One</p>
+					<p id="channel_overview_content">Itni garmi hai bahar yaar! Hum bechare bachhe timepass karne jaaye toh kahan jaaye??? Kaisa laga video??? Aapne kaise shoppers dekhe hain?? Tell me no!<br><a href="https://www.google.com" id="showMore">REPLY</a></p>
+				</div>
+			</div>
+			<div id="commenta">
+				<div id="channel_dp">
+				</div>
+				<div id="commentors">
+					<p id="channelName">User One</p>
+					<p id="channel_overview_content">Itni garmi hai bahar yaar! Hum bechare bachhe timepass karne jaaye toh kahan jaaye??? Kaisa laga video??? Aapne kaise shoppers dekhe hain?? Tell me no!<br><a href="https://www.google.com" id="showMore">REPLY</a></p>
+				</div>
+			</div>
+			<div id="commenta">
+				<div id="channel_dp">
+				</div>
+				<div id="commentors">
+					<p id="channelName">User One</p>
+					<p id="channel_overview_content">Itni garmi hai bahar yaar! Hum bechare bachhe timepass karne jaaye toh kahan jaaye??? Kaisa laga video??? Aapne kaise shoppers dekhe hain?? Tell me no!<br><a href="https://www.google.com" id="showMore">REPLY</a></p>
+				</div>
+			</div>
+			<div id="commenta">
+				<div id="channel_dp">
+				</div>
+				<div id="commentors">
+					<p id="channelName">User One</p>
+					<p id="channel_overview_content">Itni garmi hai bahar yaar! Hum bechare bachhe timepass karne jaaye toh kahan jaaye??? Kaisa laga video??? Aapne kaise shoppers dekhe hain?? Tell me no!<br><a href="https://www.google.com" id="showMore">REPLY</a></p>
+				</div>
+			</div>
+			<div id="commenta">
+				<div id="channel_dp">
+				</div>
+				<div id="commentors">
+					<p id="channelName">User One</p>
+					<p id="channel_overview_content">Itni garmi hai bahar yaar! Hum bechare bachhe timepass karne jaaye toh kahan jaaye??? Kaisa laga video??? Aapne kaise shoppers dekhe hain?? Tell me no!<br><a href="https://www.google.com" id="showMore">REPLY</a></p>
+				</div>
+			</div>
+			<div id="commenta">
+				<div id="channel_dp">
+				</div>
+				<div id="commentors">
+					<p id="channelName">User One</p>
+					<p id="channel_overview_content">Itni garmi hai bahar yaar! Hum bechare bachhe timepass karne jaaye toh kahan jaaye??? Kaisa laga video??? Aapne kaise shoppers dekhe hain?? Tell me no!<br><a href="https://www.google.com" id="showMore">REPLY</a></p>
+				</div>
+			</div>
+		</div>
+		<div id="right">
+			<div id="up_next">
+				<p id="up_next_text">Up Next</p>
+				<p id="autoplay">AUTOPLAY</p>
+			</div>
+			<div id="playlist">
+				<div id="thumbnaila" class="thumbnail_img">
+					
+				</div>
+				<div id="video_name">
+					<p id="video_title">Mix - When Mumbai Guy Visits Delhi</p>
+					<p id="channel">Hasley India</p>
+					<p id="channel">994K Views</p>
+				</div>
+			</div>
+			<hr id="linea"></hr>
+			<div id="playlist_down">
+				<div id="thumbnailb" class="thumbnail_img">
+					
+				</div>
+				<div id="video_name">
+					<p id="video_title">Mix - When Mumbai Guy Visits Delhi</p>
+					<p id="channel">Hasley India</p>
+					<p id="channel">994K Views</p>
+				</div>
+			</div>
+			<div id="playlist_down">
+				<div id="thumbnailc" class="thumbnail_img">
+					
+				</div>
+				<div id="video_name">
+					<p id="video_title">Mix - When Mumbai Guy Visits Delhi</p>
+					<p id="channel">Hasley India</p>
+					<p id="channel">994K Views</p>
+				</div>
+			</div>
+			<div id="playlist_down">
+				<div id="thumbnaild" class="thumbnail_img">
+					
+				</div>
+				<div id="video_name">
+					<p id="video_title">Mix - When Mumbai Guy Visits Delhi</p>
+					<p id="channel">Hasley India</p>
+					<p id="channel">994K Views</p>
+				</div>
+			</div>
+			<div id="playlist_down">
+				<div id="thumbnaile" class="thumbnail_img">
+					
+				</div>
+				<div id="video_name">
+					<p id="video_title">Mix - When Mumbai Guy Visits Delhi</p>
+					<p id="channel">Hasley India</p>
+					<p id="channel">994K Views</p>
+				</div>
+			</div>
+			<div id="playlist_down">
+				<div id="thumbnailf" class="thumbnail_img">
+					
+				</div>
+				<div id="video_name">
+					<p id="video_title">Mix - When Mumbai Guy Visits Delhi</p>
+					<p id="channel">Hasley India</p>
+					<p id="channel">994K Views</p>
+				</div>
+			</div>
+			<div id="playlist_down">
+				<div id="thumbnailf" class="thumbnail_img">
+					
+				</div>
+				<div id="video_name">
+					<p id="video_title">Mix - When Mumbai Guy Visits Delhi</p>
+					<p id="channel">Hasley India</p>
+					<p id="channel">994K Views</p>
+				</div>
+			</div>
+			<div id="playlist_down">
+				<div id="thumbnailf" class="thumbnail_img">
+					
+				</div>
+				<div id="video_name">
+					<p id="video_title">Mix - When Mumbai Guy Visits Delhi</p>
+					<p id="channel">Hasley India</p>
+					<p id="channel">994K Views</p>
+				</div>
+			</div>
+			<div id="playlist_down">
+				<div id="thumbnailf" class="thumbnail_img">
+					
+				</div>
+				<div id="video_name">
+					<p id="video_title">Mix - When Mumbai Guy Visits Delhi</p>
+					<p id="channel">Hasley India</p>
+					<p id="channel">994K Views</p>
+				</div>
+			</div>
+			<div id="playlist_down">
+				<div id="thumbnailf" class="thumbnail_img">
+					
+				</div>
+				<div id="video_name">
+					<p id="video_title">Mix - When Mumbai Guy Visits Delhi</p>
+					<p id="channel">Hasley India</p>
+					<p id="channel">994K Views</p>
+				</div>
+			</div>
+			<div id="playlist_down">
+				<div id="thumbnailf" class="thumbnail_img">
+					
+				</div>
+				<div id="video_name">
+					<p id="video_title">Mix - When Mumbai Guy Visits Delhi</p>
+					<p id="channel">Hasley India</p>
+					<p id="channel">994K Views</p>
+				</div>
+			</div>
+			<div id="playlist_down">
+				<div id="thumbnailf" class="thumbnail_img">
+					
+				</div>
+				<div id="video_name">
+					<p id="video_title">Mix - When Mumbai Guy Visits Delhi</p>
+					<p id="channel">Hasley India</p>
+					<p id="channel">994K Views</p>
+				</div>
+			</div>
+			<div id="playlist_down">
+				<div id="thumbnailf" class="thumbnail_img">
+					
+				</div>
+				<div id="video_name">
+					<p id="video_title">Mix - When Mumbai Guy Visits Delhi</p>
+					<p id="channel">Hasley India</p>
+					<p id="channel">994K Views</p>
+				</div>
+			</div>
+			<div id="playlist_down">
+				<div id="thumbnailf" class="thumbnail_img">
+					
+				</div>
+				<div id="video_name">
+					<p id="video_title">Mix - When Mumbai Guy Visits Delhi</p>
+					<p id="channel">Hasley India</p>
+					<p id="channel">994K Views</p>
+				</div>
+			</div>
+			<div id="playlist_down">
+				<div id="thumbnailf" class="thumbnail_img">
+					
+				</div>
+				<div id="video_name">
+					<p id="video_title">Mix - When Mumbai Guy Visits Delhi</p>
+					<p id="channel">Hasley India</p>
+					<p id="channel">994K Views</p>
+				</div>
+			</div>
+			<div id="playlist_down">
+				<div id="thumbnailf" class="thumbnail_img">
+					
+				</div>
+				<div id="video_name">
+					<p id="video_title">Mix - When Mumbai Guy Visits Delhi</p>
+					<p id="channel">Hasley India</p>
+					<p id="channel">994K Views</p>
+				</div>
+			</div>
+			<div id="playlist_down">
+				<div id="thumbnailf" class="thumbnail_img">
+					
+				</div>
+				<div id="video_name">
+					<p id="video_title">Mix - When Mumbai Guy Visits Delhi</p>
+					<p id="channel">Hasley India</p>
+					<p id="channel">994K Views</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

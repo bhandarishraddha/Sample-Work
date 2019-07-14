@@ -1,0 +1,796 @@
+<html>
+<head>
+	<title>YouTube</title>
+	<style type="text/css">
+		html, body
+{
+	height: 100%;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+#up
+{
+	height: 10%;
+	width: 100%;
+	position: fixed;
+	background-color: white;
+}
+#down
+{
+	padding-top: 56px;
+	height: 90%;
+	width: 100%;
+}
+#left
+{
+	height: 100%;
+	width: 18%;
+	background-color: #F5F5F5;
+	display: inline-block;
+	overflow-y: auto;
+}
+#right
+{
+	background-color: #FAFAFA;
+	height: 100%;
+	float: right;
+	width: 82%;
+	overflow-y: auto;
+}
+#lefttitle
+{
+	height: 100%;
+	width: 21%;
+	display: inline-block;
+}
+#searchbar
+{
+	height: 60%;
+	width: 48%;
+	float: right;
+	display: inline-block;
+	margin-top: 12px;
+}
+#options
+{
+	margin-top: 12px;
+	height: 60%;
+	width: 31%;
+	float: right;
+}
+#menu_icon
+{
+	height: 30%;
+	width: 7%;
+	margin-top: 18px;
+	margin-left: 30px;
+	display: inline-block;
+}
+#menu_linea, #menu_lineb, #menu_linec
+{
+	border-style: solid;
+	border-width: 1px;
+	border-color: grey;
+	line-height: 0px;
+	margin-top: -4px;
+}
+#menu_linea
+{
+	margin-top: 4px;
+}
+#logo
+{
+	float: right;
+	margin-right: 118px;
+	margin-top: 12px;
+	width: 35%;
+	height: 50%;
+}
+#logo_img
+{
+	margin-right: auto;
+	margin-top: 5px;
+}
+#search
+{
+	height: 100%;
+	width: 90%;
+	display: inline-block;
+}
+#search_icon
+{
+
+	height: 100%;
+	width: 10%;
+	margin-left: -5px;
+}
+#camera_icon
+{
+ 	height: 100%;
+	width: 10%;
+	float: right;
+	display: inline-block;
+	margin-right: 20px;
+	margin-top: 3px;
+}
+#tile_icon
+{
+	height: 100%;
+	width: 10%;
+	display: inline-block;
+	float: right;
+	margin-right: 20px;
+	margin-top: 3px;
+}
+#share_icon
+{
+	height: 100%;
+	width: 10%;
+	display: inline-block;
+	float: right;
+	margin-right: 20px;
+	margin-top: 3px;
+}
+#three_dots
+{
+	height: 100%;
+	width: 10%;
+	display: inline-block;
+	float: right;
+	margin-right: 20px;
+}
+#user
+{
+	height: 100%;
+	width: 10%;
+	display: inline-block;
+	float: right;
+	margin-right: 20px;
+}
+#icon_img
+{
+	margin-left: 3px;
+}
+#dota, #dotb, #dotc
+{
+	border-style: solid;
+	border-width: 2px;
+	border-color: grey;
+	line-height: 0px;
+	margin-top: -4px;
+}
+#dota
+{
+	margin-top: 8px;
+}
+#dots
+{
+	width: 10%;
+	margin: auto;
+}
+#login
+{
+	height: 35px;
+	width: 35px;
+	border-style: solid;
+	border-width: 0px;
+	border-radius: 30px;
+	background-color: purple;
+	color: white;
+}
+#home
+{
+	margin-top: 15px;
+}
+.home
+{
+	width: 100%;
+	height: 35px;
+}
+.icons
+{
+	height: 100%;
+	width: 20%;
+	display: inline-block;
+}
+.icon
+{
+	margin-top: 11px;
+	float: right;
+}
+.menu
+{
+	height: 100%;
+	width: 73%;
+	float: right;
+}
+.heading
+{
+	margin-top: 12px;
+	font-family: "arial";
+	font-size: 17px;
+}
+.line
+{
+	margin-top: 20px;
+	margin-bottom: 15px;
+	border-style: solid;
+	border-width: 0.5px;
+	border-color: grey;
+}
+#fixheading
+{
+	margin-top: 7px;
+	margin-left: 30px;
+	font-family: "arial";
+	font-weight: bold;
+	font-size: 13px;
+}
+#homea
+{
+	height: 20px;
+}
+#anchor
+{
+	width: 85%;
+	height: 100px;
+	margin: auto;
+}
+#anchors
+{
+	margin-left: 5px;
+	text-decoration: none;
+	font-family: "arial";
+	font-size: 13px;
+	font-weight: bold;
+	color: grey;
+}
+#llc
+{
+	color: darkgrey;
+	font-size: 14px;
+}
+#videos
+{
+	width: 80%;
+	height: 100%;
+	margin:auto;
+}
+.trending
+{
+	width: 100%;
+	height: 300px;
+}
+.fixtrending
+{
+	width: 100%;
+	height: 25%;
+}
+.fixtrend
+{
+	margin-top: -25px;
+}
+.tvideos
+{
+	width: 100%;
+	height: 75%;
+}
+.block
+{
+	margin-left: 3px;
+	height: 100%;
+	width: calc((98%)/4);
+	display: inline-block;
+}
+.blocka
+{
+	height: 100%;
+	width: calc((98%)/4);
+	display: inline-block;
+}
+.blockb
+{
+	height: 100%;
+	width: calc((98%)/4);
+	display: inline-block;
+}
+.blockc
+{
+	height: 100%;
+	width: calc((98%)/4);
+	display: inline-block;
+}
+
+#texttrending
+{
+	font-family: "arial";
+	font-size: 18px;
+	font-weight: bold;
+	margin-top: 0px;
+}
+.textt
+{
+	padding-top: 30px;
+}
+.thumbnail
+{
+	width: 100%;
+	height: 54%;
+}
+.link
+{
+	width: 100%;
+	height: 44%;
+	margin-top: 5px;
+	line-height: 20px;
+}
+#pizza_img
+{
+	height: 100%;
+	width: 100%;
+}
+#lorem
+{
+	font-family: "arial";
+	text-decoration: none;
+	color: black;
+	font-size: 15px;
+	font-weight: bold;
+}
+#channel
+{
+	line-height: 0px;
+	font-family: "arial";
+	text-decoration: none;
+	color: grey;
+	font-size: 13px;
+}
+#views
+{
+	line-height: 0px;
+	font-family: "arial";
+	text-decoration: none;
+	color: grey;
+	font-size: 13px;
+}
+.showmore
+{
+	color: grey;
+	text-decoration: none;
+	font-family: "arial";
+	font-size: 15px;
+	font-weight: bold;
+}
+	</style>
+</head>
+<body>
+	<div id="title">
+		<div id="up">
+			<div id="lefttitle">
+				<div id="menu_icon">
+					<hr id="menu_linea"></hr>
+					<hr id="menu_lineb"></hr>
+					<hr id="menu_linec"></hr>
+				</div>
+				<div id="logo">
+					<img src="img/1.png" height="23px" id="logo_img">
+				</div>
+			</div>
+			<div id="options">
+				<div id="user">
+					<input type="submit" name="login" value="S" id="login">
+				</div>
+				<div id="three_dots">
+					<div id="dots">
+						<hr id="dota"></hr>
+						<hr id="dotb"></hr>
+						<hr id="dotc"></hr>
+					</div>
+				</div>
+				<div id="share_icon">
+					<img src="img/3.png" height="30px" id="icon_img">
+				</div>
+				<div id="tile_icon">
+					<img src="img/3.png" height="30px" id="icon_img">
+				</div>
+				<div id="camera_icon">
+					<img src="img/3.png" height="30px" id="icon_img">
+				</div>
+			</div>
+			<div id="searchbar">
+				<input type="text" name="search" placeholder="Search" id="search">
+				<input type="submit" name="search_icon" id="search_icon" value="O">
+			</div>
+		</div>
+		<div id="down">
+			<div id="left">
+				<div class="home" id="home">
+					<div class="icons">
+						<img src="img/3.png" height="20px" class="icon">
+					</div>
+					<div class="menu">
+						<p class="heading">Home</p>
+					</div>
+				</div>
+				<div class="home">
+					<div class="icons">
+						<img src="img/3.png" height="20px" class="icon">
+					</div>
+					<div class="menu">
+						<p class="heading">Trending</p>
+					</div>
+				</div>
+				<div class="home">
+					<div class="icons">
+						<img src="img/3.png" height="20px" class="icon">
+					</div>
+					<div class="menu">
+						<p class="heading">Subscriptions</p>
+					</div>
+				</div>
+				<hr class="line"></hr>
+				<div class="home">
+					<div class="icons">
+						<img src="img/3.png" height="20px" class="icon">
+					</div>
+					<div class="menu">
+						<p class="heading">Library</p>
+					</div>
+				</div>
+				<div class="home">
+					<div class="icons">
+						<img src="img/3.png" height="20px" class="icon">
+					</div>
+					<div class="menu">
+						<p class="heading">History</p>
+					</div>
+				</div>
+				<hr class="line"></hr>
+				<div class="home" id="homea">
+					<p id="fixheading">BEST OF YOUTUBE</p>
+				</div>
+				<div class="home">
+					<div class="icons">
+						<img src="img/3.png" height="20px" class="icon">
+					</div>
+					<div class="menu">
+						<p class="heading">Music</p>
+					</div>
+				</div>
+				<div class="home">
+					<div class="icons">
+						<img src="img/3.png" height="20px" class="icon">
+					</div>
+					<div class="menu">
+						<p class="heading">Sports</p>
+					</div>
+				</div>
+				<div class="home">
+					<div class="icons">
+						<img src="img/3.png" height="20px" class="icon">
+					</div>
+					<div class="menu">
+						<p class="heading">Gaming</p>
+					</div>
+				</div>
+				<div class="home">
+					<div class="icons">
+						<img src="img/3.png" height="20px" class="icon">
+					</div>
+					<div class="menu">
+						<p class="heading">Movies</p>
+					</div>
+				</div>
+				<div class="home">
+					<div class="icons">
+						<img src="img/3.png" height="20px" class="icon">
+					</div>
+					<div class="menu">
+						<p class="heading">News</p>
+					</div>
+				</div>
+				<div class="home">
+					<div class="icons">
+						<img src="img/3.png" height="20px" class="icon">
+					</div>
+					<div class="menu">
+						<p class="heading">Spotlight</p>
+					</div>
+				</div>	
+				<div class="home">
+					<div class="icons">
+						<img src="img/3.png" height="20px" class="icon">
+					</div>
+					<div class="menu">
+						<p class="heading">360 Video</p>
+					</div>
+				</div>
+				<hr class="line"></hr>
+				<div class="home">
+					<div class="icons">
+						<img src="img/3.png" height="20px" class="icon">
+					</div>
+					<div class="menu">
+						<p class="heading">Browse Channels</p>
+					</div>
+				</div>
+				<hr class="line"></hr>
+				<div class="home" id="homea">
+					<p id="fixheading">MORE FROM YOUTUBE</p>
+				</div>
+				<div class="home">
+					<div class="icons">
+						<img src="img/3.png" height="20px" class="icon">
+					</div>
+					<div class="menu">
+						<p class="heading">YouTube Premium</p>
+					</div>
+				</div>
+				<div class="home">
+					<div class="icons">
+						<img src="img/3.png" height="20px" class="icon">
+					</div>
+					<div class="menu">
+						<p class="heading">Live</p>
+					</div>
+				</div>
+				<hr class="line"></hr>
+				<div class="home">
+					<div class="icons">
+						<img src="img/3.png" height="20px" class="icon">
+					</div>
+					<div class="menu">
+						<p class="heading">Settings</p>
+					</div>
+				</div>
+				<div class="home">
+					<div class="icons">
+						<img src="img/3.png" height="20px" class="icon">
+					</div>
+					<div class="menu">
+						<p class="heading">Report History</p>
+					</div>
+				</div>
+				<div class="home">
+					<div class="icons">
+						<img src="img/3.png" height="20px" class="icon">
+					</div>
+					<div class="menu">
+						<p class="heading">Help</p>
+					</div>
+				</div>
+				<div class="home">
+					<div class="icons">
+						<img src="img/3.png" height="20px" class="icon">
+					</div>
+					<div class="menu">
+						<p class="heading">Send feedback</p>
+					</div>
+				</div>
+				<hr class="line"></hr>
+				<div id="anchor">
+				<a href="https://www.google.com" id="anchors">About</a>
+				<a href="https://www.google.com" id="anchors">Press</a>
+				<a href="https://www.google.com" id="anchors">Copyright</a>
+				<a href="https://www.google.com" id="anchors">Contact us</a>
+				<a href="https://www.google.com" id="anchors">Creators</a><br>
+				<a href="https://www.google.com" id="anchors">Advertise</a>
+				<a href="https://www.google.com" id="anchors">Developers</a>
+				<br><br>
+				<a href="https://www.google.com" id="anchors">Terms</a>
+				<a href="https://www.google.com" id="anchors">Privacy</a>
+				<a href="https://www.google.com" id="anchors">Policy & Safety</a>
+				<a href="https://www.google.com" id="anchors">Test new features</a>
+				<br><br>
+				<p class="heading" id="llc">© 2019 YouTube, LLC</p><br> 
+			</div>
+			</div>
+			<div id="right">
+				<div id="videos">
+					<div class="trending">
+						<div class="fixtrending">
+							<div class="textt">
+								<p id="texttrending">Trending</p>
+							</div>
+						</div>
+						<div class="tvideos">
+							<div class="block">
+								<div class="thumbnail">
+									<img src="img/3.jpg" id="pizza_img">
+								</div>
+								<div class="link">
+									<a href="https://www.google.com" id="lorem">Lorem Ipsum!! The sample text for all!!</a><br><br>
+									<a href="https://www.google.com" id="channel">Rimorav Vlogs</a>
+									<p id="views">62M views : 4 hours ago</p>
+								</div>
+							</div>
+							<div class="blocka">
+								<div class="thumbnail">
+									<img src="img/3.jpg" id="pizza_img">
+								</div>
+								<div class="link">
+									<a href="https://www.google.com" id="lorem">Lorem Ipsum!! The sample text for all!!</a><br><br>
+									<a href="https://www.google.com" id="channel">Rimorav Vlogs</a>
+									<p id="views">62M views : 4 hours ago</p>
+									
+								</div>
+							</div>
+							<div class="blockb">
+								<div class="thumbnail">
+									<img src="img/3.jpg" id="pizza_img">
+								</div>
+								<div class="link">
+									<a href="https://www.google.com" id="lorem">Lorem Ipsum!! The sample text for all!!</a><br><br>
+									<a href="https://www.google.com" id="channel">Rimorav Vlogs</a>
+									<p id="views">62M views : 4 hours ago</p>
+									
+								</div>
+							</div>
+							<div class="blockc">
+								<div class="thumbnail">
+									<img src="img/3.jpg" id="pizza_img">
+								</div>
+								<div class="link">
+									<a href="https://www.google.com" id="lorem">Lorem Ipsum!! The sample text for all!!</a><br><br>
+									<a href="https://www.google.com" id="channel">Rimorav Vlogs</a>
+									<p id="views">62M views : 4 hours ago</p>
+								</div>
+							</div>
+						</div>
+						<div class="tvideos">
+							<div class="block">
+								<div class="thumbnail">
+									<img src="img/3.jpg" id="pizza_img">
+								</div>
+								<div class="link">
+									<a href="https://www.google.com" id="lorem">Lorem Ipsum!! The sample text for all!!</a><br><br>
+									<a href="https://www.google.com" id="channel">Rimorav Vlogs</a>
+									<p id="views">62M views : 4 hours ago</p>
+								</div>
+							</div>
+							<div class="blocka">
+								<div class="thumbnail">
+									<img src="img/3.jpg" id="pizza_img">
+								</div>
+								<div class="link">
+									<a href="https://www.google.com" id="lorem">Lorem Ipsum!! The sample text for all!!</a><br><br>
+									<a href="https://www.google.com" id="channel">Rimorav Vlogs</a>
+									<p id="views">62M views : 4 hours ago</p>
+									
+								</div>
+							</div>
+							<div class="blockb">
+								<div class="thumbnail">
+									<img src="img/3.jpg" id="pizza_img">
+								</div>
+								<div class="link">
+									<a href="https://www.google.com" id="lorem">Lorem Ipsum!! The sample text for all!!</a><br><br>
+									<a href="https://www.google.com" id="channel">Rimorav Vlogs</a>
+									<p id="views">62M views : 4 hours ago</p>
+									
+								</div>
+							</div>
+							<div class="blockc">
+								<div class="thumbnail">
+									<img src="img/3.jpg" id="pizza_img">
+								</div>
+								<div class="link">
+									<a href="https://www.google.com" id="lorem">Lorem Ipsum!! The sample text for all!!</a><br><br>
+									<a href="https://www.google.com" id="channel">Rimorav Vlogs</a>
+									<p id="views">62M views : 4 hours ago</p>
+								</div>
+							</div>
+						</div>
+						<hr class="line"></hr>
+						<div class="fixtrend">
+							<div class="textt">
+								<p id="texttrending">Recommended</p>
+							</div>
+						</div>
+						<div class="tvideos">
+							<div class="block">
+								<div class="thumbnail">
+									<img src="img/3.jpg" id="pizza_img">
+								</div>
+								<div class="link">
+									<a href="https://www.google.com" id="lorem">Lorem Ipsum!! The sample text for all!!</a><br><br>
+									<a href="https://www.google.com" id="channel">Rimorav Vlogs</a>
+									<p id="views">62M views : 4 hours ago</p>
+								</div>
+							</div>
+							<div class="blocka">
+								<div class="thumbnail">
+									<img src="img/3.jpg" id="pizza_img">
+								</div>
+								<div class="link">
+									<a href="https://www.google.com" id="lorem">Lorem Ipsum!! The sample text for all!!</a><br><br>
+									<a href="https://www.google.com" id="channel">Rimorav Vlogs</a>
+									<p id="views">62M views : 4 hours ago</p>
+									
+								</div>
+							</div>
+							<div class="blockb">
+								<div class="thumbnail">
+									<img src="img/3.jpg" id="pizza_img">
+								</div>
+								<div class="link">
+									<a href="https://www.google.com" id="lorem">Lorem Ipsum!! The sample text for all!!</a><br><br>
+									<a href="https://www.google.com" id="channel">Rimorav Vlogs</a>
+									<p id="views">62M views : 4 hours ago</p>
+									
+								</div>
+							</div>
+							<div class="blockc">
+								<div class="thumbnail">
+									<img src="img/3.jpg" id="pizza_img">
+								</div>
+								<div class="link">
+									<a href="https://www.google.com" id="lorem">Lorem Ipsum!! The sample text for all!!</a><br><br>
+									<a href="https://www.google.com" id="channel">Rimorav Vlogs</a>
+									<p id="views">62M views : 4 hours ago</p>
+								</div>
+							</div>
+						</div>
+						<div class="fixtrend">
+							<div class="textt">
+								<a href="https://www.google.com" class="showmore">SHOW MORE</a>
+							</div>
+						</div>
+						<hr class="line"></hr>
+						<div class="fixtrend">
+							<div class="textt">
+								<p id="texttrending">Recommended</p>
+							</div>
+						</div>
+						<div class="tvideos">
+							<div class="block">
+								<div class="thumbnail">
+									<img src="img/3.jpg" id="pizza_img">
+								</div>
+								<div class="link">
+									<a href="https://www.google.com" id="lorem">Lorem Ipsum!! The sample text for all!!</a><br><br>
+									<a href="https://www.google.com" id="channel">Rimorav Vlogs</a>
+									<p id="views">62M views : 4 hours ago</p>
+								</div>
+							</div>
+							<div class="blocka">
+								<div class="thumbnail">
+									<img src="img/3.jpg" id="pizza_img">
+								</div>
+								<div class="link">
+									<a href="https://www.google.com" id="lorem">Lorem Ipsum!! The sample text for all!!</a><br><br>
+									<a href="https://www.google.com" id="channel">Rimorav Vlogs</a>
+									<p id="views">62M views : 4 hours ago</p>
+									
+								</div>
+							</div>
+							<div class="blockb">
+								<div class="thumbnail">
+									<img src="img/3.jpg" id="pizza_img">
+								</div>
+								<div class="link">
+									<a href="https://www.google.com" id="lorem">Lorem Ipsum!! The sample text for all!!</a><br><br>
+									<a href="https://www.google.com" id="channel">Rimorav Vlogs</a>
+									<p id="views">62M views : 4 hours ago</p>
+									
+								</div>
+							</div>
+							<div class="blockc">
+								<div class="thumbnail">
+									<img src="img/3.jpg" id="pizza_img">
+								</div>
+								<div class="link">
+									<a href="https://www.google.com" id="lorem">Lorem Ipsum!! The sample text for all!!</a><br><br>
+									<a href="https://www.google.com" id="channel">Rimorav Vlogs</a>
+									<p id="views">62M views : 4 hours ago</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

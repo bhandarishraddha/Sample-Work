@@ -1,0 +1,529 @@
+<html>
+<head>
+	<title>Spotify</title>
+	<style type="text/css">
+		html, body
+{
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+	height: 100%;
+}
+#up
+{
+	width: 100%;
+	height: 80px;
+	background-color: rgba(0,0,0,0.5);
+	position: fixed;
+}
+#logo
+{
+	margin-top: 20px;
+	width: 20%;
+	height: 40px;
+	display: inline-block;
+	float: left;
+	margin-left: 100px;
+}
+#up_title
+{
+	margin-top: 20px;
+	width: 40%;
+	height: 40px;
+	display: inline-block;
+	float: right;
+}
+#down
+{
+	width: 100%;
+	height: 2950px;
+	background-color: black;
+}
+#tilea
+{
+	width: 100%;
+	height: 560px;
+	background-color: orange;
+}
+#getSpotify
+{
+	width: 70%;
+	height: 50%;
+	margin: auto;
+	vertical-align: middle;
+	padding-top: 150px;
+}
+#main_largeHeading
+{
+	font-family: "arial";
+	font-weight: bold;
+	color: white;
+	margin-top: -30px;
+	font-size: 85px;
+}
+#main_smallHeading
+{
+	font-family: "arial";
+	font-weight: bold;
+	color: white;
+	margin-top: -45px;
+	font-size: 27px;
+}
+#getFree
+{
+	width: 22%;
+	height: 50px;
+	color: white;
+	font-weight: bold;
+	font-family: "arial";
+	background-color: green;
+	border-width: 0px;
+	border-radius: 40px;
+	margin-top: 20px;
+}
+.up_text
+{
+	display: inline-block;
+	color: white;
+	font-weight: bold;
+	text-decoration: none;
+	font-weight: none;
+	font-family: "arial";
+	margin-left: 25px;
+}
+#terms
+{
+	color: white;
+	margin-top: 30px;
+	font-weight: none;
+	font-family: "arial";
+	font-size: 12px;
+}
+#terms_link
+{
+	color: white;
+	text-decoration: none;
+	font-weight: none;
+	font-family: "arial";
+	font-size: 12px;
+}
+#tileb
+{
+	width: 100%;
+	height: 1450px;
+	margin-top: -50px;
+	background-color: white;
+}
+#power_heading
+{
+	font-weight: bold;
+	font-family: "arial";
+	font-size: 50px;
+	padding-top: 100px;
+}
+#icons
+{
+	width: 80%;
+	height: 280px;
+	margin: auto;
+	margin-top: 70px;
+}
+#icona, #iconb, #iconc, #icond
+{
+	width: calc((98%)/4);
+	height: 100%;
+	display: inline-block;
+}
+#icona
+{
+	margin-left: 5px;
+}
+#icon_img
+{
+	height: 65%;
+	width: 100%;
+}
+#icon_circle
+{
+	width: 170px;
+	height: 170px;
+	margin: auto;
+	background-color: grey;
+	border-radius: 300px;
+	background-image: url("../img/1.jpg");
+}
+#icon_heading
+{
+	font-weight: bold;
+	font-family: "arial";
+	font-size: 20px;
+}
+#icon_text
+{
+	font-family: "arial";
+	font-size: 15px;
+	line-height: 0px;
+}
+#join_premium
+{
+	margin-left:550px;
+	margin-top: 50px;
+	width: 16%;
+	height: 50px;
+	background-color: green;
+	color: white;
+	font-weight: bold;
+	border-radius: 30px;
+	border-width: 0px;
+	margin-bottom: 60px;
+}
+#album
+{
+	width: 86%;
+	height: 350px;
+	margin: auto;
+	margin-top: 70px;
+}
+#albuma, #albumb, #albumc, #albumd
+{
+	width: calc((86%)/4);
+	height: 100%;
+	display: inline-block;
+}
+#albumb, #albumc
+{
+	margin-left: 50px;
+}
+#albumd
+{
+	float: right;
+}
+#album_img
+{
+	height: 65%;
+	width: 100%;
+	background-image: url("../img/1.jpg");
+}
+#album_heading
+{
+	margin-top: 45px;
+	font-weight: bold;
+	font-family: "arial";
+	font-size: 20px;
+}
+#album_text
+{
+	font-family: "arial";
+	font-size: 15px;
+	line-height: 20px;
+}
+#tilec
+{
+	width: 100%;
+	height: 830px;
+	margin-top: -50px;
+	background-color: #F2F2F2;
+}
+#plan
+{
+	font-family: "arial";
+	font-size: 20px;
+	margin-top: -30px;
+}
+#plans
+{
+	width: 75%;
+	height: 450px;
+	margin: auto;
+	margin-top: 75px;
+}
+#plana, #planb, #planc
+{
+	width: calc((87%)/3);
+	height: 100%;
+	display: inline-block;
+}
+#plana
+{
+	float: left;
+}
+#planb
+{
+	margin-left: 65px;
+}
+#planc
+{
+	float: right;
+}
+#plan_name
+{
+	width: 100%;
+	height: 20%;
+	margin-top: -30px;
+}
+#about_plan
+{
+	width: 100%;
+	height: 80%;
+	background-color: white;
+	border-radius: 10px;
+	box-shadow: 0px 0px 5px #220;
+	padding-left: 15px;
+	padding-top: 20px;
+}
+#plan_text
+{
+	font-family: "arial";
+	font-size: 30px;
+	font-weight: bold;
+	padding-top: 10px;
+}
+#terms_n
+{
+	font-family: "arial";
+	font-size: 12px;
+	margin-top: 20px;
+	margin-left: 8px;
+}
+#terms_nlink
+{
+	color: black;
+	font-family: "arial";
+	font-size: 12px;
+}
+#days
+{
+	background-color: skyblue;
+	border-radius: 3px;
+	width: 87px;
+	height: 23px;
+	padding-top: 3px;
+	color: white;
+}
+#spot_prem
+{
+	font-family: "arial";
+	font-weight: bold;
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+#subscribe
+{
+	font-family: "arial";
+	font-size: 14px;
+}
+#cost
+{
+	width: 90%;
+	height: 45px;
+	border-radius: 40px;
+	background-color: green;
+	border-width: 0px;
+	color: white;
+	margin-left: 8px;
+	margin-top: 80px;
+	font-weight: bold;
+}
+#costb
+{
+	width: 90%;
+	height: 55px;
+	border-radius: 30px;
+	background-color: green;
+	border-width: 0px;
+	color: white;
+	margin-left: 8px;
+	margin-top: 112px;
+	font-weight: bold;
+}
+#costc
+{
+	width: 90%;
+	height: 45px;
+	border-radius: 40px;
+	background-color: green;
+	border-width: 0px;
+	color: white;
+	margin-left: 8px;
+	margin-top: 123px;
+	font-weight: bold;
+}
+#bottom_links
+{
+	width: 86%;
+	height: 30px;
+	margin: auto;
+	margin-top: 50px;
+}
+.bottomLinks
+{
+	color: darkgrey;
+	font-family: "arial";
+	font-size: 13px;
+	text-decoration: none;
+	margin-left: 15px;
+}
+#spotify
+{
+	margin-left: 650px;
+}
+	</style>
+</head>
+<body>
+	<div id="up">
+		<div id="logo">
+			<img src="img/4.png" height="40px" id="logo_img">
+		</div>
+		<div id="up_title">
+			<a href="https://www.google.com" id="premium" class="up_text">Premium</a><a href="https://www.google.com" id="help" class="up_text">Help<a><a href="https://www.google.com" id="download" class="up_text">Download</a><p id="icon" class="up_text">|</p><a href="https://www.google.com" id="signup" class="up_text">Sign up</a><a href="https://www.google.com" id="login" class="up_text">Log In</a>
+		</div>
+	</div>
+	<div id="down">
+		<div id="tilea">
+			<div id="getSpotify" align="center">
+				<p id="main_largeHeading">Discover music with Spotify Premium</p>
+				<p id="main_smallHeading">Millions of songs in your pocket from just Rs. 13.00/day.</p>
+				<input type="submit" name="getFree" value="JOIN PREMIUM" id="getFree">
+				<p id="terms"><a id="terms_link" href="https://www.google.com"> *Terms and Conditions </a> apply</p>
+			</div>
+		</div>
+		<div id="tileb">
+			<p id="power_heading" align="center">The Power of Premium</p>
+			<div id="icons">
+				<div id="icona">
+					<div id="icon_img">
+						<div id="icon_circle">
+							
+						</div>
+					</div>
+					<div id="icon_content" align="center">
+						<p id="icon_heading">No Interruptions</p>
+						<p id="icon_text">Play the music you love.</p>
+					</div>
+				</div>
+				<div id="iconb">
+					<div id="icon_img">
+						<div id="icon_circle">
+							
+						</div>
+					</div>
+					<div id="icon_content" align="center">
+						<p id="icon_heading">No Interruptions</p>
+						<p id="icon_text">Play the music you love.</p>
+					</div>
+				</div>
+				<div id="iconc">
+					<div id="icon_img">
+						<div id="icon_circle">
+							
+						</div>
+					</div>
+					<div id="icon_content" align="center">
+						<p id="icon_heading">No Interruptions</p>
+						<p id="icon_text">Play the music you love.</p>
+					</div>
+				</div>
+				<div id="icond">
+					<div id="icon_img">
+						<div id="icon_circle">
+							
+						</div>
+					</div>
+					<div id="icon_content" align="center">
+						<p id="icon_heading">No Interruptions</p>
+						<p id="icon_text">Play the music you love.</p>
+					</div>
+				</div>
+			</div>
+			<input type="submit" name="join_premium" value="JOIN PREMIUM" id="join_premium">
+			<p id="power_heading" align="center">Connect with Music Culture</p>
+			<div id="album">
+				<div id="albuma">
+					<div id="album_img">
+			
+					</div>
+					<div id="album_content">
+						<p id="album_heading">No Interruptions</p>
+						<p id="album_text">Play the music you love.</p>
+					</div>
+				</div>
+				<div id="albumb">
+					<div id="album_img">
+						
+					</div>
+					<div id="album_content">
+						<p id="album_heading">No Interruptions</p>
+						<p id="album_text">Play the music you love.</p>
+					</div>
+				</div>
+				<div id="albumc">
+					<div id="album_img">
+						
+					</div>
+					<div id="album_content">
+						<p id="album_heading">No Interruptions</p>
+						<p id="album_text">Play the music you love.</p>
+					</div>
+				</div>
+				<div id="albumd">
+					<div id="album_img">
+						
+					</div>
+					<div id="album_content">
+						<p id="album_heading">No Interruptions</p>
+						<p id="album_text">Play the music you love.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="tilec">
+			<p id="power_heading" align="center">Pick your Premium</p>
+			<p id="plan" align="center">We've got a plan that's right for you.</p>
+			<div id="plans">
+				<div id="plana">
+					<div id="plan_name">
+						<p id="plan_text" align="center">Subscribe</p>
+					</div>
+					<div id="about_plan">
+						<p id="days" align="center">30 days free</p>
+						<p id="spot_prem">Spotify Premium</p>
+						<p id="subscribe">Subscribe for Rs.119.00/month after trial. Cancel anytime.</p>
+						<input type="submit" name="cost" id="cost" value="GET 30 DAYS FREE">
+						<p id="terms_n">* <a id="terms_nlink" href="https://www.google.com">Terms and Conditions </a> apply.</p>
+					</div>
+				</div>
+				<div id="planb">
+					<div id="plan_name">
+						<p id="plan_text" align="center">Get a prepaid plan</p>
+					</div>
+					<div id="about_plan">
+						<p id="spot_prem">Spotify Premium</p>
+						<p id="subscribe">Subscribe for Rs.119.00/month after trial. Cancel anytime.</p>
+						<input type="submit" name="cost" id="costb" value="GET 30 DAYS FREE">
+						<p id="terms_n">* <a id="terms_nlink" href="https://www.google.com">Terms and Conditions </a> apply.</p>
+					</div>
+				</div>
+				<div id="planc">
+					<div id="plan_name">
+						<p id="plan_text" align="center">Student</p>
+					</div>
+					<div id="about_plan">
+						<p id="spot_prem">Spotify Premium</p>
+						<p id="subscribe">Subscribe for Rs.119.00/month after trial. Cancel anytime.</p>
+						<input type="submit" name="cost" id="costc" value="GET 30 DAYS FREE">
+						<p id="terms_n">* <a id="terms_nlink" href="https://www.google.com">Terms and Conditions </a> apply.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="bottom_links">
+			<a href="https://www.google.com" class="bottomLinks">Legal</a>
+			<a href="https://www.google.com" class="bottomLinks">Privacy Center</a>
+			<a href="https://www.google.com" class="bottomLinks">Privacy Policy</a>
+			<a href="https://www.google.com" class="bottomLinks">Cookies</a>
+			<a href="https://www.google.com" class="bottomLinks">About Ads</a>
+			<a href="https://www.google.com" class="bottomLinks" id="spotify">@ 2019 Spotify AB</a>
+		</div>
+	</div>
+</body>
+</html>

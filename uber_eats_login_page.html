@@ -1,0 +1,753 @@
+<html>
+<head>
+	<title>
+		Uber Eats
+	</title>
+	<style type="text/css">
+		html, body
+{
+	height: 100%;
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+#title
+{
+	background-color: white;
+	height: 80px;
+	width: 100%;
+	position: fixed;
+	margin-top: -80px;
+	border-style: solid;
+	border-color: #FCFCFC;
+	border-bottom-width: 1px;
+	box-shadow: 2px 0px 10px lightgrey;
+	
+}
+#search
+{
+	margin-top: 80px; 
+	height: 420px;
+	width: 100%;
+	background-image: url(../img/c.png);
+}
+#logo
+{
+	height: 40%;
+	width: 15%;
+	display: inline-block;
+	margin-top: 25px;
+	margin-left: 80px;
+}
+#signin
+{
+	height: 30%;
+	margin-right: 50px;
+	margin-top: 33px;
+	float: right;
+	width: 7%;
+	display: inline-block;
+}
+#logo_img
+{
+	height: 100%;
+}
+#signinn
+{
+	font-family: "arial";
+	font-size: 18px;
+	text-decoration: none;
+	color: grey;
+}
+#restro
+{
+	width: 49%;
+	height: 10%;
+	margin-top: 145px;
+	margin-left: 342px;
+	display: inline-block;
+}
+#loc
+{
+	width: 49%;
+	height: 12%;
+	margin-top: 35px;
+	margin-left: 342px;
+	display: inline-block;
+}
+#loc_icon
+{
+	width: 10%;
+	height: 100%;
+	background-color: white;
+	border-width: 0px;
+}
+#enterloc
+{
+	width: 90%;
+	height: 100%;
+	margin-left: -5px;
+	border-width: 0px;
+}
+#find_food
+{
+	width: 17%;
+	height: 100%;
+	float: right;
+	background-color: green;
+	border-width: 0px;
+	color: white;
+}
+#block
+{
+	height: 95%;
+	width: 80%;
+	display: inline-block;
+	border-style: solid;
+	border-color: lightgrey;
+	border-right-width: 0.1px;
+	border-left-width: 0px; 
+	border-top-width: 0px;
+	border-bottom-width: 0.7px;
+}
+#headinga
+{
+	font-family: "arial";
+	font-size: 35px;
+	margin-left: 10px;
+	font-weight: bold;
+	margin-top: 0px;
+}
+#tileb
+{
+	padding-top: 40px;
+	height: 1950px;
+	width: 88%;
+	margin: auto;
+}
+#inner_tileb
+{
+	width: 100%;
+	height: 300px;
+	margin-bottom: 30px;
+}
+#innera,#innerb, #innerc
+{
+	height: 100%;
+	width: calc((97%)/3);
+	display: inline-block;
+}
+#innera
+{
+	float: left;
+}
+#innerb
+{
+	margin-left: 17px; 
+}
+#innerc
+{
+	float: right;
+}
+#innera_img, #innerb_img, #innerc_img
+{
+	width: 100%;
+	height: 70%;
+}
+#inner_imgs
+{
+	height: 100%;
+	width: 100%;
+}
+#innera_link_text, #innerb_link_text, #innerc_link_text
+{
+	font-family: "arial";
+	font-size: 25px;
+	margin-top: 0px;
+	padding-top: 15px;
+}
+#innera_link, #innerb_link, #innerc_link
+{
+	width: 100%;
+	height: 30%;
+}
+#innerb_linka, #innera_linka, #innerc_linka
+{
+	width: 100%;
+	height: 49%;
+}
+#innera_linkb
+{
+	width: 100%;
+	height: 49%;
+}
+#innerb_linkb, #innerc_linkb
+{
+	margin-top: 11px;
+}
+#geta
+{
+	width: 25%;
+	height: 60%;
+	display: inline-block;
+}
+#getimga, #getimgaa
+{
+	width: 6%;
+	height: 60%;
+	display: inline-block;
+}
+#gettexta, #gettextaa
+{
+	width: 20%;
+	height: 60%;
+	display: inline-block;
+}
+#innera_linkb_img
+{
+	height: 40%;
+	margin-top: 10px;
+}
+#innera_linkb_text
+{
+	font-family: "arial";
+	font-size: 15px;
+}
+#linkk
+{
+	font-family: "arial";
+	font-size: 20px;
+	color: green;
+	text-decoration: none;
+}
+#linea
+{
+	border-style: solid;
+	border-width: 0.3px;
+	border-color: grey;
+}
+#lineb
+{
+	border-style: solid;
+	border-width: 0.5px;
+	border-color: grey;
+}
+#headingb
+{
+	width: 100%;
+	height: 30px;
+	margin-bottom: 40px;
+}
+#headb
+{
+	font-size: 30px;
+	font-family: "arial";
+}
+#iner_text_tileaa
+{
+	font-family: "arial";
+	font-size: 20px;
+	line-height: 0px;
+}
+#iner_text_tilebb
+{
+	font-family: "arial";
+	font-size: 15px;
+	line-height: 7px;
+}
+#iner_text_tilecc
+{
+	font-family: "arial";
+	font-size: 16px;
+	line-height: 21px;
+}
+#iner_text_tilee
+{
+	width: 20%;
+	height:25%;
+	margin-top: -5px;
+}
+#cities
+{
+	width: 100%;
+	height: 240px;
+}
+#deliveryyy, #dhanb, #kolha, #ranch
+{
+	height: 100%;
+	width: 25%;
+	float: left;
+	display: inline-block;
+}
+.abou
+{
+	font-family: "arial";
+	color: black;
+	text-decoration: none;
+	font-size: 20px;
+}
+#circular
+{
+	width: 100%;
+	height: 250px;
+}
+
+#circular > div
+{
+	height: 178px;
+	width: 178px;
+	display: inline-block;
+	border-radius: 300px;	
+}
+/*#diva, #divb, #divc, #divd, #dive, #divf
+{
+	height: 178px;
+	width: 178px;
+	display: inline-block;
+	border-radius: 300px;
+}*/
+/*#diva
+{
+	float: left;
+}
+#divf
+{
+	float: right;
+}*/
+#divb, #divc, #divd, #dive
+{
+	margin-left: 20px;
+}
+#divb
+{
+	margin-left: 23px;
+}
+#diva_img
+{
+	margin-left: 40px;
+	margin-right: -40px;
+}
+#divv_img
+{
+	height: 50%;
+	width: 50%;
+	border-radius: 300px;
+}
+#diva_text
+{
+	height: 72px; 
+	width: 178px;
+}
+#diva_textt
+{
+	font-family: "arial";
+	font-size: 15px;
+}
+#final_tile
+{
+	width: 100%;
+	height: 525px;
+	background-color: black;
+}
+#tilec
+{
+	width: 88%;
+	margin:auto;
+	height: 100%;
+}
+#tileca
+{
+	width: 100%;
+	height: 60%;
+}
+#tilecb
+{
+	width: 100%;
+	height: 40%;
+}
+#tilecaa, #tilecba
+{
+	width: 50%;
+	height: 100%;
+	display: inline-block;
+	float: left;
+}
+#tilecab, #tilecbb
+{
+	width: 50%;
+	height: 100%;
+	display: inline-block;
+	float: right;
+}
+#tilec_texta
+{
+	width: 50%;
+	height: 100%;
+	float: left;
+	display: inline-block;
+}
+#tilec_textb
+{
+	width: 50%;
+	height: 100%;
+	float: right;
+	display: inline-block;
+}
+#tilec_txta
+{
+	font-family: "arial";
+	font-weight: bold;
+	font-size: 16px;
+	color: white;
+	margin-bottom: 30px;
+	margin-top: 60px;
+}
+#tilec_txt
+{
+	font-family: "arial";
+	font-size: 16px;
+	color: white;
+	line-height: 30px;
+}
+#tilecaaa
+{
+	height: 65%;
+	width: 100%;
+	margin-top: 50px;
+}
+#tileca_a
+{
+	height: 25%;
+	width: 40%;
+}
+#tileca_b, #tileca_c
+{
+	height: 20%;
+	width: 26%;
+	margin-top: 123px;
+	display: inline-block;
+}
+#image
+{
+	height: 100%;
+}
+#enda, #endb, #endc
+{
+	margin-top: 20px;
+	width: 25%;
+	display: inline-block;
+}
+#tilecba
+{
+	margin-top: 20px;
+}
+	</style>
+</head>
+<body>
+	<div id="title">
+		<div id="logo">
+			<img src="img/4.png" id="logo_img">
+		</div>
+		<div id="signin">
+			<a href="https://www.google.com" id="signinn">Sign In</a>
+		</div>
+	</div>
+	<div id="search">
+		<div id="restro">
+			<p id="headinga">Restaurants you love, delivered to you</p>
+		</div>
+		<div id="loc">
+			<div id="delivery">
+				<div id="block">
+					<input type="submit" name="loc_icon" id="loc_icon" value="O">
+					<input type="text" name="enterloc" placeholder="Enter delivery address" id="enterloc">
+				</div>
+				<input type="submit" name="find_food" id="find_food" value="FIND FOOD">
+			</div>
+		</div>
+	</div>
+	<div id="tileb">
+		<div id="inner_tileb">
+			<div id="innera">
+				<div id="innera_img">
+					<img src="img/b.png" id="inner_imgs">
+				</div>
+				<div id="innera_link">
+					<div id="innera_linka">
+						<p id="innera_link_text">There's more to love in the app.</p>
+					</div>
+					<div id="innera_linkb">
+						<div id="geta">
+							<p id="innera_linkb_text">Get the app:</p>
+						</div>
+						<div id="getimga">
+							<img src="img/3.png" id="innera_linkb_img">
+						</div>
+						<div id="gettexta">
+							<p id="innera_linkb_text">iPhone</p>
+						</div>
+						<div id="getimgaa">
+							<img src="img/3.png" id="innera_linkb_img">
+						</div>
+						<div id="gettextaa">
+							<p id="innera_linkb_text">Android</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="innerb">
+				<div id="innerb_img">
+					<img src="img/a.png" id="inner_imgs">
+				</div>
+				<div id="innerb_link">
+					<div id="innerb_linka">
+						<p id="innerb_link_text">Your Restaurant, delivered.</p>
+					</div>
+					<div id="innerb_linkb">
+						<a href="https://www.google.com" id="linkk">Add your restaurant</a>
+					</div>
+				</div>
+			</div>
+			<div id="innerc">
+				<div id="innerc_img">
+					<img src="img/d.png" id="inner_imgs">
+				</div>
+				<div id="innerc_link">
+					<div id="innerc_linka">
+						<p id="innerc_link_text">Deliver the Eats</p>
+					</div>
+					<div id="innerc_linkb">
+						<a href="https://www.google.com" id="linkk">Signup to deliver</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<hr id="linea"></hr>
+		<div id="headingb">
+			<p id="headb">Biryani Delivery in Bangalore</p>
+		</div>
+		<div id="inner_tileb">
+			<div id="innera">
+				<div id="innera_img">
+					<img src="img/3.jpg" id="inner_imgs">
+				</div>
+				<div id="innera_link">
+					<p id="iner_text_tileaa">Biryanis and more</p>
+					<p id="iner_text_tilebb">Rs  Biryani  North Indian</p>
+					<div id="iner_text_tilee">
+						<p id="iner_text_tilecc">4.0(500+)</p>
+					</div>
+				</div>
+			</div>
+			<div id="innerb">
+				<div id="innerb_img">
+					<img src="img/3.jpg" id="inner_imgs">
+				</div>
+				<div id="innerb_link">
+					<p id="iner_text_tileaa">Biryanis and more</p>
+					<p id="iner_text_tilebb">Rs  Biryani</p>
+					<div id="iner_text_tilee">
+						<p id="iner_text_tilecc">4.1(500+)</p>
+					</div>
+				</div>
+			</div>
+			<div id="innerc">
+				<div id="innerc_img">
+					<img src="img/3.jpg" id="inner_imgs">
+				</div>
+				<div id="innerc_link">
+					<p id="iner_text_tileaa">Biryanis and more</p>
+					<p id="iner_text_tilebb">Rs  Biryani</p>
+					<div id="iner_text_tilee">
+						<p id="iner_text_tilecc">3.8(500+)</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<hr id="lineb"></hr>
+		<div id="headingb">
+			<p id="headb">Cities Near You</p>
+		</div>
+		<div id="cities">
+			<div id="deliveryyy">
+			<p id="adityapur" class="abou"><a href="https://www.google.com" class="abou">Adityapur</a></p>
+			<p id="adoni" class="abou"><a href="https://www.google.com" class="abou">Adoni</a></p>
+			<p id="agartala" class="abou"><a href="https://www.google.com" class="abou">Agartala</a></p>
+			<p id="agra" class="abou"><a href="https://www.google.com" class="abou">Agra</a></p>
+			<p id="ahmeda" class="abou"><a href="https://www.google.com" class="abou">Ahmedabad</a></p>
+			</div>
+			<div id="dhanb">
+			<p id="condh" class="comp"></p>
+			<p id="Dhanbad" class="abou"><a href="https://www.google.com" class="abou">Dhanbad</a></p>
+			<p id="dharam" class="abou"><a href="https://www.google.com" class="abou">Dharamshala</a></p>
+			<p id="dharma" class="abou"><a href="https://www.google.com" class="abou">Dharmapuri</a></p>
+			<p id="dhule" class="abou"><a href="https://www.google.com" class="abou">Dhule</a></p>
+			<p id="dindig" class="abou"><a href="https://www.google.com" class="abou">Dindigul</a></p>
+			</div>
+			<div id="kolha">
+			<p id="conkol" class="comp"></p>
+			<p id="kolhapur" class="abou"><a href="https://www.google.com" class="abou">Kolhapur</a></p>
+			<p id="kolk" class="abou"><a href="https://www.google.com" class="abou">Kolkata</a></p>
+			<p id="kollam" class="abou"><a href="https://www.google.com" class="abou">Kollam</a></p>
+			<p id="kota" class="abou"><a href="https://www.google.com" class="abou">Kota</a></p>
+			<p id="latur" class="abou"><a href="https://www.google.com" class="abou">Latur</a></p>
+			</div>
+			<div id="ranch">
+			<p id="conran" class="comp"></p>
+			<p id="ranchi" class="abou"><a href="https://www.google.com" class="abou">Ranchi</a></p>
+			<p id="ratlam" class="abou"><a href="https://www.google.com" class="abou">Ratlam</a></p>
+			<p id="rewa" class="abou"><a href="https://www.google.com" class="abou">Rewa</a></p>
+			<p id="rishikesh" class="abou"><a href="https://www.google.com" class="abou">Rishikesh</a></p>
+			<p id="sagar" class="abou"><a href="https://www.google.com" class="abou">Sagar</a></p>
+			</div>
+		</div>
+		<hr id="lineb"></hr>
+		<div id="headingb">
+			<p id="headb">Breakfast and Brunch Delivery in bangalore</p>
+		</div>
+		<div id="inner_tileb">
+			<div id="innera">
+				<div id="innera_img">
+					<img src="img/3.jpg" id="inner_imgs">
+				</div>
+				<div id="innera_link">
+					<p id="iner_text_tileaa">Biryanis and more</p>
+					<p id="iner_text_tilebb">Rs  Biryani  North Indian</p>
+					<div id="iner_text_tilee">
+						<p id="iner_text_tilecc">4.0(500+)</p>
+					</div>
+				</div>
+			</div>
+			<div id="innerb">
+				<div id="innerb_img">
+					<img src="img/3.jpg" id="inner_imgs">
+				</div>
+				<div id="innerb_link">
+					<p id="iner_text_tileaa">Biryanis and more</p>
+					<p id="iner_text_tilebb">Rs  Biryani</p>
+					<div id="iner_text_tilee">
+						<p id="iner_text_tilecc">4.1(500+)</p>
+					</div>
+				</div>
+			</div>
+			<div id="innerc">
+				<div id="innerc_img">
+					<img src="img/3.jpg" id="inner_imgs">
+				</div>
+				<div id="innerc_link">
+					<p id="iner_text_tileaa">Biryanis and more</p>
+					<p id="iner_text_tilebb">Rs  Biryani</p>
+					<div id="iner_text_tilee">
+						<p id="iner_text_tilecc">3.8(500+)</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<hr id="lineb"></hr>
+		<div id="headingb">
+			<p id="headb">Explore Popular Categories</p>
+		</div>
+		<div id="circular">
+			<div id="diva">
+				<div id="diva_img">
+					<img src="img/3.jpg" id="divv_img">
+				</div>
+				<div id="diva_text">
+					<p id="diva_textt" align="center">Biryani</p>
+				</div>
+			</div>
+			<div id="divb">
+				<div id="diva_imgb">
+					<img src="img/3.jpg" id="divv_img">
+				</div>
+				<div id="diva_textb">
+					<p id="diva_textt" align="center">Breakfast and Brunch and Crunch</p>
+				</div>
+			</div>
+			<div id="divc">
+				<div id="diva_img">
+					<img src="img/3.jpg" id="divv_img">
+				</div>
+				<div id="diva_text">
+					<p id="diva_textt" align="center">Desserts</p>
+				</div>
+			</div>
+			<div id="divd">
+				<div id="diva_img">
+					<img src="img/3.jpg" id="divv_img">
+				</div>
+				<div id="diva_text">
+					<p id="diva_textt" align="center">North Indian</p>
+				</div>
+			</div>
+			<div id="dive">
+				<div id="diva_img">
+					<img src="img/3.jpg" id="divv_img">
+				</div>
+				<div id="diva_text">
+					<p id="diva_textt" align="center">Pizza</p>
+				</div>
+			</div>
+			<div id="divf">
+				<div id="diva_img">
+					<img src="img/3.jpg" id="divv_img">
+				</div>
+				<div id="diva_text" align="center">
+					<p id="diva_textt">South Indian</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="final_tile">
+	<div id="tilec">
+		<div id="tileca">
+			<div id="tilecaa">
+				<div id="tilecaaa">
+					<div id="tileca_a">
+						<img src="img/4.png" id="image">
+					</div>
+					<div id="tileca_b">
+						<img src="img/5.png" id="image">
+					</div>
+					<div id="tileca_c">
+						<img src="img/6.png" id="image">
+					</div>
+				</div>
+			</div>
+			<div id="tilecab">
+				<div id="tilec_texta">
+					<p id="tilec_txta">About Uber Eats</p>
+					<p id="tilec_txt">Read our blog</p>
+					<p id="tilec_txt">Buy gift cards</p>
+					<p id="tilec_txt">Sign up to deliver</p>
+					<p id="tilec_txt">Add your restaurant</p>
+				</div>
+				<div id="tilec_textb">
+					<p id="tilec_txta">Get Help</p>
+					<p id="tilec_txt">Read FAQ's</p>
+					<p id="tilec_txt">View all cities</p>
+					<p id="tilec_txt">Language</p>
+				</div>
+			</div>
+		</div>
+		<hr id="lineb"></hr>
+		<div id="tilecb">
+			<div id="tilecba">
+				<p id="tilec_txt">@2019 Uber Technologies Inc.</p>
+			</div>
+			<div id="tilecbb">
+				<div id="enda">
+					<p id="tilec_txt">Privacy Policy</p>
+				</div>
+				<div id="endb">
+					<p id="tilec_txt">Terms of Use</p>
+				</div>
+				<div id="endc">
+					<p id="tilec_txt">Pricing</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+</body>
+</html>
