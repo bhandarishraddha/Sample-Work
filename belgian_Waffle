@@ -1,0 +1,451 @@
+<html>
+<head>
+	<title>
+		Belgian Waffle
+	</title>
+	<style type="text/css">
+		html, body
+{
+	height: 100%;
+	width: 100%;
+	margin:0;
+	padding: 0;
+}
+#container
+{
+	width: 100%;
+	height: 100%;
+	margin:0;
+	padding: 0;
+}
+#title
+{
+	height: 65px;
+	width: 100%;
+	background-image: linear-gradient(rgba(0,0,0,1),rgba(0,0,0,0));
+	position: fixed;
+}
+#logo_img
+{
+	height: 100%;
+	width: 20%;
+	float: left;
+	margin-left: 50px;
+	margin-top: 10px;
+}
+#headings
+{
+	margin-top: 30px;
+	display: inline-block;
+	margin-left: 18px;
+}
+.titles
+{
+	font-family: "Century Gothic";
+	color: white;
+	margin-left: 25px;
+	text-decoration: none;
+	font-size: 16px;
+	font-weight: 10px;
+}
+#video_a
+{
+	width: 100%;
+}
+#platforms
+{
+	height: 170px;
+	margin-top: -150px;
+	margin-left: 450px;
+	position: relative;
+	transform: translateZ(20px);
+}
+#our_story
+{
+	width: 100%;
+	height: 850px;
+	margin-top: -20px;
+	background-color: #fccb24;
+}
+#story_heading
+{
+	display:inline-block;
+	color: white;
+	font-family: "BrookeShappell8";
+	font-size: 70px;
+	margin-top: 50px;
+}
+#line_a
+{
+	background-color: white;
+	border:none;
+	margin-top: -45px;
+	height: 1px;
+	width: 10%;
+}
+#story_content
+{
+	width: 85%;
+	height: 450px;
+	margin-top: 45px;
+}
+#story_text
+{
+	width: 48%;
+	height: 100%;
+	display: inline-block;
+	float: left;
+	line-height: 25px;
+}
+#story_para
+{
+	font-family: "Century Gothic";
+	text-align: justify;
+	font-size: 16px;
+}
+#story_video
+{
+	width: 48%;
+	display: inline-block;
+	float: right;
+	height: 100%;
+}
+#video_b
+{
+	width: 100%;
+	height: 85%;
+	background-color: black;
+	margin-top: 20px;
+}
+#know_more
+{
+	background-image: linear-gradient(#675142,#492e1d);
+	color: white;
+	font-family: "Century Gothic";
+	font-size: 12px;
+	height: 47px;
+	width: 120px;
+	border-radius: 5px;
+	margin: auto;
+	border:none;
+	margin-top: 95px;
+}
+#cake_image
+{
+	width: 100%;
+	height: 600px;
+	background-image: url(../img/b.jpg);
+	background-position: center;
+	background-size: 100%;
+	margin-top: -100px;
+	position: relative;
+	z-index: -999999;
+	background-attachment: fixed;
+	scroll-behavior: smooth;
+}
+#speciality
+{
+	width: 100%;
+	height: 1100px;
+	background-color: white;
+	background-image: url(../img/bg.png);
+	background-position: center;
+	background-size: 130%;
+}
+#speciality_heading
+{
+	display:inline-block;
+	color: #ffc116;
+	font-family: "BrookeShappell8";
+	font-size: 70px;
+	margin-top: 60px;
+}
+#line_b
+{
+	background-color: #e7d2b8;
+	border:none;
+	margin-top: -30px;
+	height: 1px;
+	width: 10%;
+}
+#special_img_a, #special_img_c
+{
+	margin-left:280px;
+	display: inline-block;
+	float: left;
+	margin-top: 100px;
+}
+#special_img_b, #special_img_d
+{
+	margin-right:280px;
+	float: right;
+	display: inline-block;
+}
+#special_img_a, #special_img_b
+{
+	margin-top: 90px;
+}
+#special_img_c, #special_img_d
+{
+	margin-top: 50px;
+}
+#full_menu
+{
+	background-image: linear-gradient(#675142,#492e1d);
+	color: white;
+	font-family: "Century Gothic";
+	font-size: 13px;
+	height: 47px;
+	width: 150px;
+	border-radius: 5px;
+	margin: auto;
+	border:none;
+	margin-top: 810px;
+}
+#parallax_b
+{
+	width: 100%;
+	height: 600px;
+	background-image: url(../img/a.jpg);
+	background-position: center;
+	background-size: 100%;
+	margin-top: -100px;
+	position: relative;
+	z-index: -999999;
+	background-attachment: fixed;
+	scroll-behavior: smooth;
+}
+#awards_tile
+{
+	width: 100%;
+	height: 350px;
+}
+#awards
+{
+	width: 70%;
+	height: 160px;
+	margin: auto;
+	margin-top: -60px;
+	vertical-align: middle;
+}
+#awards_a
+{
+	height: 180px;
+	float: left;
+}
+#contact_tile
+{
+	width: 100%;
+	height: 550px;
+	background-color: #fccb24;
+}
+#contact_us, #quick_links, #google_map, #feedback
+{
+	height: 60%;
+	display:inline-block;
+	float: left;
+	margin-left: 30px;
+	margin-top: 20px;
+}
+#contact_us
+{
+	margin-left: 100px;
+	width: 230px;
+}
+.text
+{
+	font-family: "Century Gothic";
+	text-align: left;
+}
+#link
+{
+	text-decoration: none;
+	color: black;
+	line-height: 0px;
+}
+.heading
+{
+	font-weight: bold;
+	line-height: 0;
+	font-family: "Century Gothic";
+	text-align: left;
+}
+#quick_links
+{
+	width: 200px;
+}
+#follow
+{
+	height: 80px;
+	margin-top: -20px;
+	margin-left: -40px;
+}
+#google_map
+{
+	width: 330px;
+	height: 330px;
+	background-color: lightgrey;
+}
+#map
+{
+	height: 100%;
+}
+#feedback
+{
+	width: 250px;
+	margin-left: 50px;
+}
+#button_a, #button_b, #button_c, #button_d
+{
+	width: 47%;
+	height: 35px;
+	text-align: center;
+}
+#button_a, #button_c
+{
+	float: left;
+}
+#button_b, #button_d
+{
+	float: right;
+}
+#button_c, #button_d, #button_e
+{
+	margin-top: 15px;
+}
+#button_e
+{
+	width: 100%;
+	height: 150px;
+}
+#button_f
+{
+	background-image: linear-gradient(#675142,#492e1d);
+	color: white;
+	font-family: "Century Gothic";
+	font-size: 13px;
+	height: 35px;
+	width: 110px;
+	border-radius: 5px;
+	border:none;
+	text-align: center;
+	float: left;
+	margin-top: 15px;
+}
+#end
+{
+	width: 100%;
+	height: 100px;
+	background-color: #492e1d;
+	margin-top: -20px;
+}
+#end_text
+{
+	color: white;
+	font-family: "Century Gothic";
+	font-size: 17px;
+	padding-top: 40px;
+}
+	</style>
+</head>
+<body>
+	<div id="container">
+		<div id="title">
+			<div id="logo_img">
+				<img src="img/logo.png" id="logo">
+			</div>
+			<div id="headings">
+				<a href="https://www.google.com" class="titles" id="home">Home</a>
+				<a href="https://www.google.com" class="titles" id="about">About Us</a>
+				<a href="https://www.google.com" class="titles" id="menu">Menu</a>
+				<a href="https://www.google.com" class="titles" id="gallery">Gallery</a>
+				<a href="https://www.google.com" class="titles" id="franchise">Franchise</a>
+				<a href="https://www.google.com" class="titles" id="stores">Stores</a>
+				<a href="https://www.google.com" class="titles" id="contact">Contact Us</a>
+			</div>
+		</div>
+		<div id="main_video">
+			<video autoplay src="video/1.mp4" loop="" id="video_a"></video>	
+			<img src="img/social.png" id="platforms">		
+		</div>
+		<div id="our_story" align="center">
+			<p id="story_heading">OUR STORY</p>
+			<hr id="line_a"></hr>
+			<div id="story_content">
+				<div id="story_text">
+					<p id="story_para">Owned and operated by Bloombay Enterprises LLP, The Belgian Waffle Co. was an idea born out of passion and with a mission to spread taste and delight.</p>
+<p id="story_para">Founded in 2015, the company strives to constantly innovate while staying true to its values of excellence, simplicity and affordability. Shrey was working in Manila abroad and there he came very close to unveiling the various interesting food concepts which were available. Waffle as a concept attracted him. He saw tremendous potential to bring the product to India in a big way, customized in an easy to eat and affordable format. This led to the birth of The Belgian Waffle Co.</p>
+<p id="story_para">The Belgian Waffle Co. is one of the first Waffle Specialty stations in India that offers a unique, on-the-go waffle sandwich created fresh at our waffle stations with our specially formulated egg-less batter and premium fillings. BWC pride itself on providing a continuously innovating yet consistent top quality product with a warm and dependable brand identity.</p>
+<p id="story_para">Our waffles are freshly baked, hot and crispy!</p>
+				</div>
+				<div id="story_video">
+					<video controls src="video/2.mp4" loop="" id="video_b"></video>
+				</div>
+			</div>
+			<input type="submit" name="knowmore" value="Know More" id="know_more">
+		</div>
+		<div id="cake_image">
+			
+		</div>
+		<div id="speciality" align="center">
+			<p id="speciality_heading">OUR SPECIALITY</p>
+			<hr id="line_b"></hr>
+			<img src="img/c.png" id="special_img_a">
+			<img src="img/d.png" id="special_img_b">
+			<img src="img/e.png" id="special_img_c">
+			<img src="img/f.png" id="special_img_d">
+			<input type="submit" name="knowmore" value="See our full menu" id="full_menu">
+		</div>
+		<div id="parallax_b">
+			
+		</div>
+		<div id="awards_tile" align="center">
+			<p id="speciality_heading">AWARDS & RECOGNITIONS</p>
+			<div id="awards">
+				<img src="img/c.jpg" id="awards_a">
+				<img src="img/c.jpg" id="awards_a">
+				<img src="img/c.jpg" id="awards_a">
+				<img src="img/c.jpg" id="awards_a">
+				<img src="img/c.jpg" id="awards_a">
+			</div>
+		</div>
+		<div id="contact_tile" align="center">
+			<p id="story_heading">CONNECT WITH US</p>
+			<hr id="line_a"></hr>
+			<div id="contact_us">
+				<p class="heading">Contact Us</p>
+				<a class="text" id="link" href="https://www.google.com">info@thebelgianwaffle.co</a><br>
+				<p class="text">+91 8291047470</p><br>
+				<p class="heading">Locate Us</p>
+				<p class="text" id="address">Bloombay Enterprises LLP,Devidayal Mill Compound, Darukhana,</p>
+				<p class="text">Reay Road, Mumbai – 400010</p>
+			</div>
+			<div id="quick_links">
+				<p class="heading">Quick Links</p>
+				<ul>
+					<li class="text">Terms & Conditions</li>
+					<li class="text">Careers</li>
+					<li class="text">Events & Catering</li>
+					<li class="text">Store Locator</li>
+				</ul><br>
+				<p class="heading"> Follow Us</p>
+				<img src="img/social.png" id="follow">
+			</div>
+			<div id="google_map">
+				<img src="img/map.png" id="map">
+			</div>
+			<div id="feedback">
+				<input type="text" name="name" placeholder="First Name" id="button_a">
+				<input type="text" name="Last" placeholder="Last Name" id="button_b">
+				<input type="text" name="email" placeholder="Email Address" id="button_c">
+				<input type="text" name="mobile" placeholder="Mobile Number" id="button_d">
+				<input type="text" name="name" id="button_e">
+				<input type="text" name="message" value="Send Message" id="button_f">
+			</div>
+		</div>
+		<div id="end" align="center">
+			<p id="end_text">© Copyright 2019. The Belgian Waffle Co. All Rights Reserved.</p>
+		</div>
+	</div>
+</body>
+</html>
