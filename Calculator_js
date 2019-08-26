@@ -1,0 +1,169 @@
+<html>
+<head>
+	<title>Calculator</title>
+	<style type="text/css">
+		html, body
+{
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+::placeholder
+{
+	color: white;
+	opacity: 0.5;
+	text-align: center;
+}
+#main
+{
+	height: 100%;
+	width: 100%;
+}
+#bg_img
+{
+	width: 100%;
+	height: 100%;
+}
+#main_circle
+{
+	background: rgba(0,0,0,0.5);
+	height: 370px;
+	width: 370px;
+	margin: auto;
+	transform: translateZ(-100px);
+	margin-top: -500px;
+	border-radius: 300px;
+}
+.small_circle
+{
+	background: rgba(0,0,0,0.5);
+	height: 70px;
+	width: 70px;
+	border-radius: 300px;
+	border: none;
+	color: white;
+	font-size: 40px;
+}
+#digit_a, #digit_b
+{
+	height: 150px;
+	width: 150px;
+	margin-top: -70px;
+	text-align: center;
+}
+#digit_a
+{
+	float: left;
+}
+#digit_b
+{
+	float: right;
+}
+#result
+{
+	margin: auto;
+	height: 150px;
+	width: 150px;
+	margin-left: 110px;
+	transform: translateY(100px);
+
+}
+#add
+{
+	margin-left: 25px;
+	margin-top: 20px;
+}
+#subtract
+{
+	position: relative;
+	transform: translateY(75px);
+	margin-left: -30px;
+}
+#multiply
+{
+	margin-left: 10px;
+	position: relative;
+	transform: translateY(100px);
+}
+#divide
+{
+	margin-left: 10px;
+	position: relative;
+	transform: translateY(76px);
+}
+#mod
+{
+	margin-left: 280px;
+	position: relative;
+	transform: translateY(-69px);
+}
+#answer
+{
+	align-content: center;
+	padding-top: 50px;
+}
+	</style>
+</head>
+<body>
+	<div id="main">
+		<img src="img/1.jpg" id="bg_img">
+		<div id="main_circle">
+			<input type="number" name="digit_a" id="digit_a" class="small_circle" placeholder="Digit">
+			<input type="number" name="digit_b" id="digit_b" class="small_circle" placeholder="Digit">
+			<div id="result" class="small_circle">
+				<p id="answer" align="center"></p>
+			</div>
+			<input type="submit" name="add" id="add" class="small_circle" value="+" onclick="add();">
+			<input type="submit" name="subtract" id="subtract" class="small_circle" value="-" onclick="subtract();">
+			<input type="submit" name="multiply" id="multiply" class="small_circle" value="X"  onclick="multiply();">
+			<input type="submit" name="divide" id="divide" class="small_circle" value="/" onclick="divide();">
+			<input type="submit" name="mod" id="mod" class="small_circle" value="%" onclick="mod();">
+			<script type="text/javascript">
+				var a, b, r;
+				function add()
+				{
+					a=parseInt(document.getElementById("digit_a").value);
+					b=parseInt(document.getElementById("digit_b").value);
+					r=a+b;
+					console.log(r);
+					document.getElementById("answer").innerHTML= r;
+				}
+				function subtract()
+				{
+					a=parseInt(document.getElementById("digit_a").value);
+					b=parseInt(document.getElementById("digit_b").value);
+					r=a-b;
+					console.log(r);
+					document.getElementById("answer").innerHTML= r;
+				}
+				function multiply()
+				{
+					a=parseInt(document.getElementById("digit_a").value);
+					b=parseInt(document.getElementById("digit_b").value);
+					r=a*b;
+					console.log(r);
+					document.getElementById("answer").innerHTML= r;
+				}
+				function divide()
+				{
+					a=parseInt(document.getElementById("digit_a").value);
+					b=parseInt(document.getElementById("digit_b").value);
+					r=a/b;
+					console.log(r);
+					document.getElementById("answer").innerHTML= r;
+				}
+				function mod()
+				{
+					a=parseInt(document.getElementById("digit_a").value);
+					b=parseInt(document.getElementById("digit_b").value);
+					r=a%b;
+					console.log(r);
+					document.getElementById("answer").innerHTML= r;
+				}
+			</script>
+
+		</div>
+	</div>
+</body>
+</html>
