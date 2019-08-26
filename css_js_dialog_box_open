@@ -1,0 +1,220 @@
+<html>
+<head>
+	<title>CSS_JS</title>
+	<style type="text/css">
+		html, body
+{
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+#boxx
+{
+	height: 370px;
+	width: 370px;
+	display: inline-block;
+	position: fixed;
+	right: -330px;
+	top: 10%;
+}
+.back
+{
+	background: white;
+	height: 100%;
+	width: 100%;
+}
+#open
+{
+	height: 40px;
+	width: 40px;
+	float: left;
+	display: inline-block;
+}
+#click
+{
+	height: 100%;
+	width: 100%;
+
+}
+#menu
+{
+	width: 300px;
+	height: 370px;
+	display: inline-block;
+	background-color: black;
+	padding-left: 30px;
+	float: right;
+}
+.para
+{
+	font-family: "Century Gothic";
+	font-size: 15px;
+	color: white;
+}
+#light, #dark, #mini, #full
+{
+	height: 40px;
+	width: 134px;
+}
+.all_color
+{
+	height: 35px;
+	width: 35px;
+	border: none;
+}
+.line
+{
+	margin-top: 20px;
+	width: 90%;
+	margin-left: 0px;
+}
+#colora
+{
+	background-color: red;
+}
+#colorb
+{
+	background-color: green;
+}
+#colorc
+{
+	background-color: blue;
+}
+#colord
+{
+	background-color: yellow;
+}
+#colore
+{
+	background-color: white;
+}
+#colorf
+{
+	background-color: pink;
+}
+#colorg
+{
+	background-color: orange;
+}
+#colorh
+{
+	background-color: purple;
+}
+#colori
+{
+	background-color: grey;
+}
+#ticket
+{
+	height: 60%;
+	width: 50%;
+	margin: 0px auto;
+	font-size: 88px;
+	color: white;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+#carda, #cardb, #cardc
+{
+	width: 30%;
+	height: 100%;
+	background-color: black;
+	display: inline-block;
+	border-style: solid;
+	border-color: black;
+	border-width: 2px;
+	border-radius: 30px;
+	text-align: center;
+}
+#carda
+{
+	float: left;
+}
+#cardb
+{
+	margin-left: 24px;
+}
+#cardc
+{
+	float: right;
+}
+	</style>
+</head>
+<body>
+<div id="palette" class="back">
+	<div id="ticket">
+		<div id="carda" class="cards">
+			<p>A</p>
+		</div>
+		<div id="cardb" class="cards">
+			<p>B</p>
+		</div>
+		<div id="cardc" class="cards">
+			<p>C</p>
+		</div>
+	</div>
+	<div id="boxx">
+	<div id="open">
+		<button type="button" id="click" onclick="plates();">Click</button>
+	</div>	
+	<div id="menu">
+		<p class="para">Theme</p>
+		<button type="button" id="light" onclick="color_card(0);">Light</button>
+		<button type="button" id="dark" onclick="color_card(1);">Dark</button>
+		<hr class="line"></hr>
+		<p class="para">Theme Color</p>
+		<button type="button" class="all_color" id="colora" onclick="colorr('red');"></button>
+		<button type="button" class="all_color" id="colorb" onclick="colorr('green');"></button>
+		<button type="button" class="all_color" id="colorc" onclick="colorr('blue');"></button>
+		<button type="button" class="all_color" id="colord" onclick="colorr('yellow');"></button>
+		<button type="button" class="all_color" id="colore" onclick="colorr('white');"></button>
+		<button type="button" class="all_color" id="colorf" onclick="colorr('pink');"></button>
+		<button type="button" class="all_color" id="colorg" onclick="colorr('orange');"></button>
+		<button type="button" class="all_color" id="colorh" onclick="colorr('purple');"></button>
+		<button type="button" class="all_color" id="colori" onclick="colorr('grey');"></button>
+		<hr class="line"></hr>
+		<p class="para">Sidebar Layout</p>
+		<button type="button" id="mini">Mini Header</button>
+		<button type="button" id="full">Full Header</button>
+	</div>
+	</div>
+</div>
+<script type="text/javascript">
+	var x,y,t;
+	function color_card(x)
+	{
+		var len=document.getElementsByClassName("cards").length;
+		for(var i=0;i<len;i++)
+		{
+			if (x==1)
+			{
+				document.getElementsByClassName("cards")[i].style.background="white";
+				document.getElementsByClassName("cards")[i].style.color="black";
+			}
+			else
+			{
+				document.getElementsByClassName("cards")[i].style.background="black";
+				document.getElementsByClassName("cards")[i].style.color="white";
+			}
+		}
+	}
+	function plates()
+	{
+		if(document.getElementById("boxx").style.right!= "0px")
+		{
+			document.getElementById("boxx").style.right= "0px";
+		}
+		else
+		{
+			document.getElementById("boxx").style.right= "-330px";
+		}
+	}
+	function colorr(y)
+	{
+		document.getElementsByClassName("back")[0].style.background=y;
+	}
+</script>
+</body>
+</html>
